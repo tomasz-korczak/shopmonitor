@@ -1,0 +1,11 @@
+/.idea/
+/target/
+/out/
+/data/
+/logs/
+/ml/
+/data_exports/
+/items/
+/oldsripts/
+# SMTP credentials; see config/application.properties.example
+/config/application.properties

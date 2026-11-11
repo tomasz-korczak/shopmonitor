@@ -1,0 +1,24 @@
+# Copy to config/application.properties (gitignored) and fill in.
+# Spring Boot reads it automatically when started from the repo root. Every key except the footer is required:
+# the app stops at start with a "missing settings" line when one is absent or blank.
+# The file is read as ISO-8859-1: write non-ASCII characters as \uXXXX.
+
+#H2 database user and password; the password must match the user in data/smon
+spring.datasource.username=sa
+spring.datasource.password=changeme
+
+#comma separated emails
+email.sendTo=someone@example.com,someone.else@example.com
+
+#from name
+email.display-name=raspberry
+
+#optional: mail footer (unsubscribe address and copyright); leave both out for no footer
+#email.footer.unsubscribe-to=someone@example.com
+#email.footer.copyright=© 2026 Someone
+
+#smtp server address / authorization (465 = SMTPS, see src/main/resources/application.properties)
+spring.mail.host=smtp.example.com
+spring.mail.port=465
+spring.mail.username=user@example.com
+spring.mail.password=changeme
